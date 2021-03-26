@@ -1,8 +1,8 @@
 export interface ICurrentWeatherData {
-  weather:{
+  weather:[{
     description:string,
     icon:string
-  }
+  }],
   main:{
     temp:number,
   }

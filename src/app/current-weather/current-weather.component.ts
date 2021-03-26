@@ -11,7 +11,7 @@ export class CurrentWeatherComponent implements OnInit {
 
   current:ICurrentWeather
   constructor() {
-this.current={
+  this.current={
   city:'Redmond',
   country:'US',
   date:new Date(),
