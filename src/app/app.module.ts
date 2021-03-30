@@ -9,10 +9,16 @@ import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card'
 import {MatToolbarModule} from '@angular/material/toolbar'
+import {FormsModule, ReactiveFormsModule} from '@angular/forms'
+import {MatFormFieldModule} from '@angular/material/form-field'
+import {MatInputModule} from '@angular/material/input';
+import { CitySearchComponent } from './city-search/city-search.component'
+import {MatIconModule} from '@angular/material/icon'
 @NgModule({
   declarations: [
     AppComponent,
-    CurrentWeatherComponent
+    CurrentWeatherComponent,
+    CitySearchComponent
   ],
   imports: [
     HttpClientModule,
@@ -20,7 +26,12 @@ import {MatToolbarModule} from '@angular/material/toolbar'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatToolbarModule
+    MatIconModule,
+    MatToolbarModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [WeatherService],
   bootstrap: [AppComponent]
