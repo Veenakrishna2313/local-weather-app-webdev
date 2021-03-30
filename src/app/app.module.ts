@@ -14,6 +14,7 @@ import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatInputModule} from '@angular/material/input';
 import { CitySearchComponent } from './city-search/city-search.component'
 import {MatIconModule} from '@angular/material/icon'
+import {FlexLayoutModule} from '@angular/flex-layout'
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,7 @@ import {MatIconModule} from '@angular/material/icon'
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule,
+    FormsModule,FlexLayoutModule,
     ReactiveFormsModule
   ],
   providers: [WeatherService],
