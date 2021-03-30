@@ -5,7 +5,7 @@
   <div>
     <h1>Your City, Your Forecast, Right Now!</h1></div>
    <div fxLayout="row" fxLayoutAlign="center">
-     <app-city-search (search="doSearch($event)"></app-city-search>
+     <app-city-search (searchEvent)="doSearch($event)"></app-city-search>
     </div>
 
   
@@ -13,9 +13,7 @@
    <div fvFlex></div>
    <div fvflex="1000px"> <mat-card>
   <h2> Current Weather</h2>
-<app-current-weather [current]="currentWeather">
-  
-</app-current-weather>
+<app-current-weather [current]="currentWeather"></app-current-weather>
 </mat-card>
 </div>
 
