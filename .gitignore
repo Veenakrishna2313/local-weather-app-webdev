@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 package-lock.json
-./src/environments/*
+./src/environments/environment_dev
